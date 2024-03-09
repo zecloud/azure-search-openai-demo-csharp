@@ -54,7 +54,7 @@ public class MauiSpeechSynthesisService(ITextToSpeech textToSpeech)
 
         _speakTask = Task.Run(async () =>
         {
-            var current = CultureInfo.CurrentUICulture.Name;
+            var current = "fr-FR"; //CultureInfo.CurrentUICulture.Name;
 
             var locales = await textToSpeech.GetLocalesAsync();
             var localeArray = locales.ToArray();

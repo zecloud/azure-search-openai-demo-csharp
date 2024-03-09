@@ -85,8 +85,7 @@ public class ReadRetrieveReadChatService
             var getQueryChat = new ChatHistory(@"You are a helpful AI assistant, generate search query for followup question.
 Make your respond simple and precise. Return the query only, do not return any other text.
 e.g.
-Northwind Health Plus AND standard plan.
-standard plan AND dental AND employee benefit.
+le magazine Programmez
 ");
 
             getQueryChat.AddUserMessage(question);
@@ -123,7 +122,7 @@ standard plan AND dental AND employee benefit.
         // step 3
         // put together related docs and conversation history to generate answer
         var answerChat = new ChatHistory(
-            "You are a system assistant who helps the company employees with their questions. Be brief in your answers");
+            "You are a system assistant who helps the magzine readers with their questions. Be brief in your answers");
 
         // add chat history
         foreach (var turn in history)

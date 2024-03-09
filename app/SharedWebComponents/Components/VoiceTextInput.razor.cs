@@ -57,7 +57,7 @@ public sealed partial class VoiceTextInput : IDisposable
         }
         else
         {
-            var bcp47Tag = CultureInfo.CurrentUICulture.Name;
+            var bcp47Tag = "fr-FR"; //CultureInfo.CurrentUICulture.Name;
 
             _recognitionSubscription?.Dispose();
             _recognitionSubscription = SpeechRecognition.RecognizeSpeech(
